@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p>This is a random text for the codigniter article. there's nothing to see here folks, just move along!</p>
+<h2>Contact Us</h2>
+<?php
+echo form_open('welcome/contactus);
+echo form_label('your name', 'name');
+$ndata = arry('name'='name','id' ='id','size'='25');
+echo form_input($ndata);
+
+echo form_label('your email','email');
+$edata = array('name'=>'email', 'id'=>'email', 'size' => '25');
+echo form_input($edata);
+
+echo form_label('how can we help you?', 'notes');
+$cdata = array('name' => 'notes', 'id' => 'notes', 'cols' => '40', 'rows' => '5');
+echo form_textarea($cdata);
+
+echo form_submit('submit', 'send us a note');
+echo form_close();
+
+?>
+
+</body>
+</html>11
